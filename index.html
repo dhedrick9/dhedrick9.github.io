@@ -1,79 +1,613 @@
-DH DANIEL HEDRICK
-Projects
-Writing
-About
-Resume
-Contact
-Baseball Operations Portfolio
-Daniel
-Hedrick
-Baseball Operations  |  Player Evaluation  |  Roster Strategy
-Communications and Media Studies graduate with a Sports Business minor building front-office work around roster construction, player evaluation, research, analytics and clear baseball communication.
+<!DOCTYPE html>
+<html lang="en">
 
-View my projects →
-LinkedIn
-Featured Work
-Baseball Operations Projects
-PIT
-Player Evaluation
-NEXT UP: Pittsburgh Pirates
-Evaluating three overlooked Pirates players: Khristian Curtis, Duce Gourson and Jhostynxon García. An examination of player development, roster flexibility and Pittsburgh's competitive future.
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-Read full analysis →
-TOR
-Roster Construction
-2027 Toronto Blue Jays Offseason Strategy
-A seven-part front-office exercise evaluating the roster, financial outlook, free agents, trade targets and acquisitions to build a 2027 contender.
+<title>Daniel Hedrick | Baseball Operations Portfolio</title>
 
-11-page analysis →
-NYY
-Trade Analysis
-2026 Yankees Trade Deadline Targets
-Evaluation of potential acquisitions including Mason Miller, Ryan Jeffers and Yennier Cano using statistical analysis, trade packages and feasibility.
+<meta name="description"
+content="Daniel Hedrick — Baseball Operations, Player Evaluation, Roster Strategy and Baseball Writing.">
 
-Open analysis →
-MLB
-Player Evaluation
-Finding Hidden Value
-One underrated player from every MLB organization, using advanced metrics, pitch profiles, platoon splits and role/deployment analysis. Work in progress.
+<style>
 
-Current analysis →
-Flagship Case Study
-2027 Blue Jays Strategy
-The project asks a front-office question: how do you improve a roster without treating every weakness as a mandate to spend? The plan combines financial capital, prospect capital and short-term flexibility.
+:root {
+    --bg: #04111c;
+    --panel: #081d2d;
+    --panel2: #0b263a;
+    --ink: #f4f8fc;
+    --muted: #a9bdcf;
+    --blue: #1591ff;
+    --line: #1b4664;
+}
 
-View full project
-Key decisions
-Build around impact talent rather than simply filling positional need.
-Use free agency and trades as complementary acquisition channels.
-Evaluate payroll alongside projected player value.
-Preserve enough organizational depth to retain in-season flexibility.
-Published Baseball Writing
-Reporting the game
-Former Hatters primed to become big leaguers
-A West Volusia Beacon feature examining former Stetson baseball players positioned to make an impact at the next level. The piece combines prospect research with accessible baseball storytelling.
+* {
+    box-sizing: border-box;
+}
 
-Read published article →
-Daniel Hedrick at Stetson University
-About Me
-Baseball thinking + communication
-I’m a Stetson University graduate with a B.A. in Communications and Media Studies and a minor in Sports Business. I’m pursuing a career in professional baseball with a focus on baseball operations, player evaluation and player development.
+html {
+    scroll-behavior: smooth;
+}
 
-Education
-Stetson University
-Experience
-West Volusia Beacon • FanSided • NCAA event operations
-Interests
-Roster strategy • Player evaluation • Player development
-Skills
-Research • Excel • Python • Professional writing
-Résumé
-Experience & Qualifications
-Baseball operations, player evaluation, sports media, research and event operations experience.
+body {
+    margin: 0;
+    background: linear-gradient(
+        180deg,
+        #03101a,
+        #061826 45%,
+        #03101a
+    );
+    color: var(--ink);
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.55;
+}
 
-View / Download Résumé →
-Contact
-Let's talk baseball.
-Baseball operations • Player evaluation • Player development • Analytics
-Email me
-LinkedIn
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrap {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(3,16,26,.95);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #12334a;
+}
+
+.nav {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    font-weight: 900;
+    letter-spacing: .05em;
+}
+
+.brand b {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.links a:hover {
+    color: var(--blue);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 590px;
+    display: grid;
+    grid-template-columns: .78fr 1.22fr;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero-photo {
+    min-height: 590px;
+    background:
+        url("daniel-hedrick.jpg")
+        center 28% / cover no-repeat;
+    position: relative;
+}
+
+.hero-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 65%,
+        #04111c
+    );
+}
+
+.hero-copy {
+    padding: 80px 5vw 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    color: #58b2ff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(56px, 7vw, 100px);
+    line-height: .9;
+    margin: 14px 0;
+    text-transform: uppercase;
+    letter-spacing: -.04em;
+}
+
+.hero h2 {
+    font-size: 17px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: #cce4f7;
+    margin: 0 0 22px;
+}
+
+.lede {
+    max-width: 700px;
+    font-size: 18px;
+    color: #d2dfeb;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 18px;
+    border: 1px solid #5b7890;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    transition: .2s;
+}
+
+.btn.primary {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 70px 0;
+    border-bottom: 1px solid #11354e;
+}
+
+.section-title {
+    font-size: 36px;
+    margin: 6px 0 28px;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 8px 0 12px;
+}
+
+/* PROJECT GRID */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        145deg,
+        var(--panel2),
+        #071824
+    );
+    border: 1px solid #27516d;
+    border-radius: 10px;
+    padding: 28px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+
+.card:hover {
+    border-color: var(--blue);
+    transform: translateY(-3px);
+}
+
+.card .graphic {
+    height: 115px;
+    margin: -28px -28px 24px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(21,145,255,.35),
+            transparent 35%
+        ),
+        linear-gradient(135deg,#102c43,#061521);
+    border-bottom: 1px solid #28526e;
+}
+
+.logo-badge {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: white;
+    color: #0b3152;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 900;
+    box-shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+
+.logo-badge.pit {
+    background: #ffb81c;
+    color: #111;
+}
+
+.logo-badge.nyy {
+    color: #172b4d;
+}
+
+.logo-badge.mlb {
+    border-radius: 14px;
+    background: linear-gradient(
+        90deg,
+        #174d8f 50%,
+        #b62d35 50%
+    );
+    color: white;
+    font-size: 17px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.card .meta {
+    margin-top: auto;
+    padding-top: 18px;
+    color: #67b9ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.card a.stretch::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+/* FEATURED CASE STUDY */
+
+.split {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 44px;
+    align-items: center;
+}
+
+.feature {
+    background: linear-gradient(
+        145deg,
+        #0b263a,
+        #071824
+    );
+    border: 1px solid #27516d;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.feature ul {
+    color: var(--muted);
+    padding-left: 20px;
+}
+
+.feature li {
+    margin: 10px 0;
+}
+
+/* WRITING */
+
+.writing {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.baseball-art {
+    height: 210px;
+    border-radius: 10px;
+    background:
+        radial-gradient(
+            circle at 30% 35%,
+            #f7f4ec 0 24%,
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 68% 70%,
+            #f7f4ec 0 22%,
+            transparent 23%
+        ),
+        linear-gradient(145deg,#12334a,#071824);
+    position: relative;
+    overflow: hidden;
+}
+
+.baseball-art::before,
+.baseball-art::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 3px dashed #b8333d;
+    border-radius: 50%;
+    opacity: .75;
+}
+
+.baseball-art::before {
+    left: 23px;
+    top: 34px;
+}
+
+.baseball-art::after {
+    right: 30px;
+    bottom: 20px;
+}
+
+/* ABOUT */
+
+.about {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 44px;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #315873;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.fact {
+    padding: 16px;
+    background: #081d2d;
+    border: 1px solid #21445d;
+    border-radius: 8px;
+}
+
+.fact strong {
+    display: block;
+    color: #62b8ff;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 48px 0 70px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.small {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .links {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-photo {
+        min-height: 460px;
+    }
+
+    .hero-copy {
+        padding: 52px 5vw;
+    }
+
+    .projects-grid,
+    .split,
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .writing {
+        grid-template-columns: 1fr;
+    }
+
+    .about img {
+        max-width: 420px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="wrap nav">
+
+        <div class="brand">
+            <b>DH</b> DANIEL HEDRICK
+        </div>
+
+        <div class="links">
+            <a href="#projects">Projects</a>
+            <a href="#writing">Writing</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div
+        class="hero-photo"
+        role="img"
+        aria-label="Daniel Hedrick at Stetson University graduation">
+    </div>
+
+    <div class="hero-copy">
+
+        <div class="eyebrow">
+            Baseball Operations Portfolio
+        </div>
+
+        <h1>
+            Daniel<br>
+            Hedrick
+        </h1>
+
+        <h2>
+            Baseball Operations |
+            Player Evaluation |
+            Roster Strategy
+        </h2>
+
+        <p class="lede">
+            Communications and Media Studies graduate
+            with a Sports Business minor building
+            front-office work around roster construction,
+            player evaluation, research, analytics
+            and clear baseball communication.
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn primary" href="#projects">
+                View My Projects →
+            </a>
+
+            <a
+                class="btn"
+                href="https://www.linkedin.com/in/daniel-hedrick-8573212b3/"
+                target="_blank"
+                rel="noopener">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <div class="wrap">
+
+        <div class="eyebrow">
+            Featured Work
+        </div>
+
+        <h2 class="section-title">
+            Baseball Operations Projects
+        </h2>
+
+        <div class="projects-grid">
+
+
+            <!-- PITTSBURGH PIRATES -->
+
+            <article class="card">
+
+                <div class="graphic">
+                    <div class="logo-badge pit">
+                        PIT
+                    </div>
+                </div>
+
+                <div class="eyebrow">
+                    Player Evaluation
+                </div>
+
+                <h3>
+                    NEXT UP: Pittsburgh Pirates
+                </h3>
+
+                <p>
+                    Evaluating three overlooked Pirates
+                    players: Khristian Curtis,
+                    Duce Gourson and Jhostynxon García.
+
+                    An examination of player development,
+                    roster flexibility and Pittsburgh's
+                    competitive future.
+                </p>
+
+                <div class="meta">
